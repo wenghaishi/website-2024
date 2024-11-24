@@ -3,99 +3,106 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main className="flex flex-col gap-16 row-start-2 items-center justify-center">
+        <div className={'flex flex-col items-center max-w-[770px] justify-center sm:items-start sm:flex-row gap-10'}>
+          <Image src={'/sam.jpg'} width={250} height={250} alt={'photo of sam'} className={'rounded-xl'}/>
+            <div className="flex flex-col md:w-[500px] gap-4">
+                <h1 className={'text-2xl'}>Hi, I am Sam (Weng Haishi)</h1>
+                <h1 className={'text-sm text-cyan-700'}>Software engineer @ the Economic Development Board of Singapore</h1>
+                <p>I enjoy solving problems and turning ideas into reality. Some of my tools are:</p>
+                <div className={'flex flex-row gap-4 flex-wrap'}>
+                    <Image src={'/ts.svg'} height={30} width={30} alt={'ts icon'}/>
+                    <Image src={'/go.svg'} height={30} width={30} alt={'go icon'}/>
+                    <Image src={'/java.svg'} height={30} width={30} alt={'java icon'}/>
+                    <Image src={'/python.svg'} height={30} width={30} alt={'python icon'}/>
+                    <Image src={'/nextjs.svg'} height={30} width={30} alt={'nextjs icon'}/>
+                    <Image src={'/react.svg'} height={30} width={30} alt={'react icon'}/>
+                    <Image src={'/node.svg'} height={30} width={30} alt={'node icon'}/>
+                    <Image src={'/postgresql.svg'} height={30} width={30} alt={'postgresql icon'}/>
+                    <Image src={'/mongo.svg'} height={30} width={30} alt={'mongo icon'}/>
+                    <Image src={'/tailwind.svg'} height={30} width={30} alt={'tailwind icon'}/>
+                </div>
+            </div>
         </div>
+
+          <div className={'w-full text-start max-w-[770px]'}>
+              <h1 className={'text-xl mb-6 text-start w-full'}>Portfolio</h1>
+              <div className={'flex flex-col gap-3'}>
+                  <h2 className={'text-cyan-700'}>
+                      Nav
+                  </h2>
+                  <div>
+                      An information hub for companies looking to expand in Singapore. Notable features: AI search and recommendation engine, Webform for companies to submit connections requests and informational articles.
+                  </div>
+                  <a href={'https://invest.edb.gov.sg'} className={'text-cyan-700'}   target="_blank"
+                     rel="noopener noreferrer">
+                      https://invest.edb.gov.sg
+                  </a>
+                  <div className={'flex flex-row gap-4'}>
+                      <Image src={'/ts.svg'} height={30} width={30} alt={'ts icon'}/>
+                      <Image src={'/postgresql.svg'} height={30} width={30} alt={'postgresql icon'}/>
+                      <Image src={'/nextjs.svg'} height={30} width={30} alt={'nextjs icon'}/>
+                  </div>
+
+                  <div className="w-full h-[1px] bg-gradient-to-r my-12 from-transparent via-gray-500 to-transparent"></div>
+
+                  <h2 className={'text-cyan-700'}>
+                      HySights dashboard
+                  </h2>
+                  <div>
+                      A dashboard to visualise data from different renewable energy projects. Notable features: Table dashboard with sorting, filter and hide-column features. Chart dashboard with multiple chart types and data aggregation.
+                  </div>
+                  <a href={'https://dashboard-app-pi-ivory.vercel.app/en'} className={'text-cyan-700'}   target="_blank"
+                     rel="noopener noreferrer">
+                      https://dashboard-app-pi-ivory.vercel.app/en
+                  </a>
+                  <div className={'flex flex-row gap-4'}>
+                      <Image src={'/ts.svg'} height={30} width={30} alt={'ts icon'}/>
+                      <Image src={'/nextjs.svg'} height={30} width={30} alt={'nextjs icon'}/>
+                      <Image src={'/tailwind.svg'} height={30} width={30} alt={'tailwind icon'}/>
+                  </div>
+
+                  <div className="w-full h-[1px] bg-gradient-to-r my-12 from-transparent via-gray-500 to-transparent"></div>
+
+                  <h2 className={'text-cyan-700'}>
+                      Js-4-all
+                  </h2>
+                  <div>
+                      A LeetCode clone with a focus on JavaScript. Notable features: LeetCode problems with in-browser code editor and test cases. Flashcards to test users on important concepts. Short refresher lessons on javascript.
+                  </div>
+                  <a href={'https://js-4-all.vercel.app/'} className={'text-cyan-700'}   target="_blank"
+                     rel="noopener noreferrer">
+                      https://js-4-all.vercel.app/
+                  </a>
+                  <div className={'flex flex-row gap-4'}>
+                      <Image src={'/ts.svg'} height={30} width={30} alt={'ts icon'}/>
+                      <Image src={'/nextjs.svg'} height={30} width={30} alt={'nextjs icon'}/>
+                      <Image src={'/tailwind.svg'} height={30} width={30} alt={'tailwind icon'}/>
+                      <Image src={'/mongo.svg'} height={30} width={30} alt={'mongo icon'}/>
+
+                  </div>
+
+                  <div className="w-full h-[1px] bg-gradient-to-r my-12 from-transparent via-gray-500 to-transparent"></div>
+
+                  <h2 className={'text-cyan-700'}>
+                      Trello clone with ChatGPT integration
+                  </h2>
+                  <div>
+                      A Trello clone to help users manage tasks. Notable features: Drag and drop tasks, ChatGPT integration to summarise tasks.
+                  </div>
+                  <a href={'https://trello-clone-next-js-plum.vercel.app/'} className={'text-cyan-700'}   target="_blank"
+                     rel="noopener noreferrer">
+                      https://trello-clone-next-js-plum.vercel.app/
+                  </a>
+                  <div className={'flex flex-row gap-4'}>
+                      <Image src={'/ts.svg'} height={30} width={30} alt={'ts icon'}/>
+                      <Image src={'/nextjs.svg'} height={30} width={30} alt={'nextjs icon'}/>
+                      <Image src={'/tailwind.svg'} height={30} width={30} alt={'tailwind icon'}/>
+                  </div>
+              </div>
+
+          </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
