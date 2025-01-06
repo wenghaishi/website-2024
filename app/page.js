@@ -47,7 +47,7 @@ export default function Home() {
                   <div className="w-full h-[1px] bg-gradient-to-r my-12 from-transparent via-gray-500 to-transparent"></div>
 
                   <h2 className={'text-cyan-700'}>
-                      HySights dashboard
+                      Dashboard App
                   </h2>
                   <div>
                       A dashboard to visualise data from different renewable energy projects. Notable features: Table dashboard with sorting, filter and hide-column features. Chart dashboard with multiple chart types and data aggregation.
